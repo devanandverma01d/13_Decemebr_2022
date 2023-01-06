@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in function</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+    </style>
+    <script>
+        console.log("Hello from Head tag");
+    </script>
+</head>
+
+<body>
+
+    <script src="./js/script.js"></script>
+    <script>
+        console.log('Hello From body tag');
+
+
+
+        //let's create a function 
+        //two main parts in function--
+        //1. Function definition(it's mone time process)
+        //Syntax--
+        //function name(parameter1, parameter2, parameter3) {
+        // code to be executed
+        //}
+
+
+        //2. Function Call (It's many Time process)
+        function sum(parameter1, parameter2) {// this is formal parameter
+            return parameter1 + parameter2;
+        }
+        var x = sum(10, 15)
+        console.log(x);
+        // Since function calling is many time process so that we can call function any numberof time.
+        var y = sum(5, 6)   // 5,6 are actual pareameter
+        console.log(y);
+        document.write('The sum is:<div>' + sum(10, 20) + '</div>');
+    </script>
+
+    <script>
+        let console2 = { // this is an object 
+            //1.property:value
+            name: 'Devanand',
+            Surname: "Verma",
+            address: `Bhopal`,
+            //2. Function Method
+            log() {
+                console.log("Hello from funtion method");
+            }
+        }
+        var x = console2.name;
+        console.log(x);
+        console.log(console2["Surname"]);
+        var x = 'address';
+        console.log(console2[x]);
+        console.log(console2.log());
+    </script>
+</body>
+
+</html>
